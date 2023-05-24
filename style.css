@@ -1,0 +1,176 @@
+nav{
+    background-color: #1f2022;
+}
+main{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+body{
+    background-color:  #1f2022;
+}
+
+.d-flex{
+    width: 70%;
+}
+
+.card{
+    border: none;
+    
+}
+
+.card:hover{
+    animation: rotate ease 0.3s alternate infinite;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2%;
+    box-sizing: border-box;
+    
+}
+
+.cards > a{
+    text-decoration: none;
+}
+
+.form-control:focus{
+    outline:0;
+    box-shadow:none;
+    border-color: #dee2e6;
+}
+.btn-outline-success {
+    border: none;
+    background-color: #1f2022;
+    
+}
+
+.navbar-brand{
+    color:#198754;
+}
+
+
+@keyframes rotate{
+
+    to{
+        transform:translateY(-10px);
+    }
+}
+
+@media  (min-width:320px) {
+    .cards{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .card{
+        margin-bottom: 7%;
+        width: 18rem;
+    }
+
+    .card:nth-child(1){
+        margin-top: 7%;
+    }
+
+    .d-flex{
+        width: 90%;
+    }
+    
+}
+
+@media (min-width:375px){
+   .card{
+    width: 20rem;
+   }
+}
+
+@media (min-width:425px){
+    .card{
+     width: 24rem;
+    }
+ }
+
+ @media (min-width:768px) {
+    .card{
+     width: 40rem;
+    }
+
+    h5{
+        font-size: 2em;
+    }
+
+    p{
+        font-size: 1.3em;
+    }
+
+    .form-control{
+        padding: 1rem 1rem
+    }
+
+
+ }
+
+ @media (min-width:1024px) {
+
+    .cards{
+        flex-direction: row;
+
+    }
+    .card{
+     width: 20rem;
+    }
+
+    h5{
+        font-size: 1.5em;
+    }
+
+    p{
+        font-size: 1em;
+    }
+
+    .form-control{
+        padding: 1rem 0.58rem
+    }
+
+    .d-flex{
+        width: 80%;
+    }
+
+
+ }
+
+ @media (min-width:1440px) {
+
+    .cards{
+        flex-direction: row;
+
+    }
+    .card{
+     width: 25rem;
+    }
+
+    h5{
+        font-size: 1.5em;
+    }
+
+    p{
+        font-size: 1em;
+    }
+
+    .form-control{
+        padding: 1rem 0.58rem
+    }
+
+    .d-flex{
+        width: 80%;
+    }
+
+
+ }
